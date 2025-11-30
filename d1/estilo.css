@@ -258,3 +258,8 @@ footer a{
     color: black;
 
 }
+iframe {
+    margin: auto;
+    padding-left: 20px;
+    
+}
