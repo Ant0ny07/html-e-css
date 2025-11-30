@@ -158,9 +158,7 @@ line-height: 37px ;
    font-weight: bolder;
    margin: auto;
 }
-iframe{
-    margin:auto ;
-}
+
 aside>p#p2{
      line-height: 25px ;
     text-indent:-3px;
@@ -261,5 +259,8 @@ footer a{
 iframe {
     margin: auto;
     padding-left: 20px;
-    
+  
+    display: block;
+width:400px;
+
 }
