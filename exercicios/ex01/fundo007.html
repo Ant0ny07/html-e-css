@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alinhamendo vertical</title>
+    <style>
+        /*
+        todo corteiner o posicionamento dele  e relativo
+        ja o conteudo vai te um posicionamento de e absoluto
+        */
+
+        section#corteiner{
+            height: 96vh;
+            background-color: blueviolet;
+            background-size: 100% 100%;
+            padding: 10px;
+            background-image: url(imagens/target001.png);
+          
+
+        }
+        article#conteudo{
+            height: 150px;
+            width: 300px;
+            position: absolute;
+         background-color: yellow;
+          background-size: 100% 100%;
+            padding: 10px;
+            background-image: url(imagens/target001.png);
+            left: 50%;
+            top: 50%;
+           transform: translate(-50% , -50%);
+            
+
+        }
+        
+    </style>
 </head>
 <body>
-    
+    <section id="corteiner">
+        <article id="conteudo">
+           
+
+        </article>
+    </section>
 </body>
 </html>
