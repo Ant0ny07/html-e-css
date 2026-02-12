@@ -1,10 +1,21 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&family=Quicksand:wght@300..700&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playpen+Sans:wght@100..800&family=Quicksand:wght@300..700&display=swap');
+
+:root
+{
+    --font-1: "Quicksand", sans-serif;
+    --font-2:"Oswald", sans-serif;
+
+}
 *{
     padding: 0;
     margin: 0
     ;
+    background-attachment: fixed;
 }
 html,body{
     min-height: 100vh;
@@ -15,19 +26,27 @@ header{
     color:white ;
     text-align: center;
     border-radius: 0px 0px 10px 10px;
+    box-shadow: -1px 2px 1px -1px rgba(0, 0, 0, 0.116);
     
 
 
 }
 header,h1{
+ 
     padding-top: 50px;
     text-transform: uppercase;
+    font-family: var(--font-1);
+    font-size: 1.7em;
+
 }
 header,p{
-    padding-bottom: 50px;
-}
-p{
-    padding: 20px;
+    padding-bottom: 50px;}
+section p{
+    font-family: var(--font-2);
+    padding: 30px;
+    font-size: 1.9em;
+    max-width: 2000px;
+    min-width: 400px;
 }
 a{
    text-decoration: none;
@@ -37,39 +56,57 @@ a{
 }
 a :hover{
     text-decoration: underline;
-    color: aquamarine;
+    
+   background-color: aquamarine;
+
 }
 section.normal{
     
 }
 section.imagens
 {
-      background-color: rgba(0, 0, 0, 0.589);
+      background-color: rgb(0, 0, 0);
       background-image: url(imagens/background001.jpg) ;
       background-position: 90%;
+      background-size: cover;
+      max-width: 2000px;
+      min-width: 400px;
+      background-position-x: right ;
+       box-shadow: -1px 2px 8px -3px black;
+ 
+
 }
 section.imagens2{
       background-color: rgba(0, 0, 0, 0.589);
       background-image: url(imagens/background002.jpg);
-      background-position: 70%;
+      background-position: 50%;
+       max-width: 2000px;
+      min-width: 400px;
+      
+
+      box-shadow: -1px 2px 8px -3px black;
 }
 section.imagens>p{
     background-color: rgba(0, 0, 0, 0.582);
     color: white;
+    
   
 }
 section.imagens2>p{
-    background-color: rgba(0, 0, 0, 0.582);
+    background-color: rgba(0, 0, 0, 0.589);
     color: white;
+    
 }
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
+    
   
 }
 footer{
     padding: 10px;
     text-align: center;
+    margin: auto;
  
     background-color: rgba(0, 0, 0, 0.445);
 }
